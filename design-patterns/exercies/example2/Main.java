@@ -1,13 +1,14 @@
 public class Main {
  public static void main(String[] args){
+  Human john = new Human("John", 30);
+  Dog buddy = new Dog("Buddy", "Male", 5, 15.5, "Brown",john);
 
-  // delte 
-  Animal myAnimal = new Animal("Pez", "male", 3, 4.5, "blue");
+  Cat cat1 = new Cat("Esmeralda", "Female", 2, 1.35, "Gray", true);
 
-  System.out.println(myAnimal);
+  System.out.println(buddy.getName() + "'s best friend is " + buddy.getBestFriend().getName() + ".");
+  buddy.bark();
 
-  // delete
-  
-
+  System.out.println("CAT OBJECT");
+  System.out.println(cat1);
  }
 }

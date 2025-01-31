@@ -13,6 +13,11 @@ public class Animal {
   this.weight = weight;
   this.color = color;
  }
+
+
+ public String getName(){
+  return name;
+ }
  public void breathe(){
   System.out.println(name + " is breathe. ");
  }
